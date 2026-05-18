@@ -5,6 +5,8 @@
           review="https://android-review.googlesource.com/" />
   <remote name="git-ti-com"
           fetch=".." />
+  <remote name="t3gemstone"
+          fetch="https://github.com/mehmetakiferdem/" />
   <default revision="main-kernel-2025" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android16-6.12" />
@@ -85,7 +87,7 @@
 <!-- non AOSP TI Projects -->
   <remove-project name="kernel/common" />
   <project path="common"  name="ti-linux-kernel/ti-linux-kernel" remote="git-ti-com" revision="android16-6.12.y" groups="ti" />
-  <project path="ti-linux-kernel" name="ti-linux-kernel/ti-linux-kernel" remote="git-ti-com" revision="ti-android-linux-6.12.y" groups="ti" />
+  <project path="ti-linux-kernel" name="android-kernel-t3-gem" remote="t3gemstone" revision="t3-gem-o1" groups="ti" />
   <project path="private/devices/ti/am6x/" name="android/kernel-ti-device/" remote="git-ti-com" revision="ti-android-linux-6.12.y" groups="ti">
     <linkfile src="device.bazelrc" dest="device.bazelrc" />
     <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
