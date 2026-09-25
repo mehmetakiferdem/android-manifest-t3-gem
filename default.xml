@@ -1039,6 +1039,7 @@
 <!-- non AOSP TI Projects -->
  <project path="device/ti/am62x" name="android-t3-gem" remote="t3gemstone" revision="t3-gem-o1" groups="device,ti" />
  <project path="device/ti/am62x-kernel" name="android-am62x-kernel-t3-gem" remote="t3gemstone" revision="t3-gem-o1" groups="device,ti" />
+ <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="t3gemstone" revision="lineage-23.0" groups="apps" />
  <project path="hardware/ti/am62x" name="android/hardware-ti-am62x" remote="git-ti-com" revision="d-android16-release" groups="ti" />
  <project path="vendor/ti/am62x" name="android/vendor-ti-am62x" remote="git-ti-com" revision="d-android16-release" groups="ti" />
  <project path="external/kmgk" name="android/external-kmgk" remote="git-ti-com" revision="d-android16-release" groups="ti" />
